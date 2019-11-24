@@ -35,6 +35,6 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 db.User = require("./User")(sequelize, Sequelize);
-db.User = require("./Score")(sequelize, Sequelize);
+db.Score = require("./Score")(sequelize, Sequelize);
 
 module.exports = db;
