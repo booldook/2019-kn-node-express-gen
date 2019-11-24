@@ -5,7 +5,8 @@ var path = require('path'); //node
 var cookieParser = require('cookie-parser'); //외부-mw
 var logger = require('morgan'); //외부-mw
 var methodOverride = require("method-override"); //외부-mw
-const rfs = require('rotating-file-stream'); //외부-mw
+var rfs = require('rotating-file-stream'); //외부-mw
+var sequelize = require("./models").sequelize;
 
 /* Router */
 var indexRouter = require('./routes/index');
@@ -44,6 +45,9 @@ app.use(methodOverride(function (req, res) {
     return method
   }
 }));
+
+/* Sequelize */
+sequelize.sync();
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

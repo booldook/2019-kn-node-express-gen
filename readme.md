@@ -11,10 +11,14 @@ npm i
 npm i morgan 			#기본설치
 npm i http-errors #기본설치
 npm i sequelize
-npm i sequelize-cli
 npm i mysql2
 npm i rotating-file-stream
 npm i multer
 npm i express-session
 npm i session-file-store
+
+# 한번만 설치하는 global module
+npm i -g sequelize-cli
+npm i -g supervisor
+npm i -g pm2
 ~~~
