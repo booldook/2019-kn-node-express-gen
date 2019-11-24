@@ -3,7 +3,7 @@
 # 한번만 설치
 npm i -g express-generator
 # express 프로젝트를 만들 폴더로 이동하여 터미널 창에서 아래와 같이 실행
-express folderName --views=pug
+express folderName --view=pug
 # 프로젝트가 생성된 폴더로 이동하여 package.json의 참조모듈을 일괄설치
 npm i
 # bin/www : 시작지점
