@@ -16,6 +16,13 @@ npm i rotating-file-stream
 npm i multer
 npm i express-session
 npm i session-file-store
+# 실무프로젝트에서 추가된 파일
+npm i bcrypt # 암호화
+npm i dotenv # .env : process.env
+npm i passport # 로그인/세션관리 모듈
+npm i connect-flash # 1회성 토스트 메세지
+# config/models/seeders/migrations(db -> models)
+sequelize init
 
 # 한번만 설치하는 global module
 npm i -g sequelize-cli
